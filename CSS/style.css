@@ -1,0 +1,467 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainColor: #2cc9c9;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #262525b3;
+    position:absolute;
+    z-index: 777;
+    
+}
+header{
+    background-color: transparent;
+    color:balck;
+    position: fixed;
+    top:0;
+    left: 0;
+    border-bottom: 1px solid #FFF;
+    width:100%;
+    z-index: 9999999;
+    
+    
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    padding: 15px;
+    color:#FFF;
+}
+a{
+    text-decoration: none;
+    color:#FFF;
+}
+ul{
+    display: flex;
+    
+}
+header nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+header nav ul li.active{
+    background-color: var(--mainColor);
+}
+section.information{
+    background-image: url(../img/pexels-george-milton-7014337.jpg);
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    padding:10px;
+   
+}
+section.information ul{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+section.information ul li{
+    list-style: none;
+    padding: 10px 10px 0 0;
+}
+section.information .container .info{
+    position:relative;
+    z-index:888;
+    color: #FFF;
+}
+section.information .container .info h3,p{
+    padding-bottom: 10px;
+}
+section.information .container .info h3{
+    font-size: 50px;
+    font-weight: 100;
+}
+section.information .container .info p{
+    font-size: 18px;
+    border-bottom: 1px solid #838383;
+    width: fit-content;
+    color: #fff !important;
+}
+
+section.skills .container{
+    display: flex;
+    margin-top: 5%;
+   
+}
+section.skills .left-div{
+    width: 25%;
+    padding: 0 60px 0 0;
+    text-align: right;
+}
+section.skills .container .left-div > h2{
+    font-weight: bold;
+}
+section.skills .right-div{
+    width: 75%;
+}
+section.skills .right-div .skill-prog {
+    margin-top: 4%;
+}
+section.skills .right-div .skill-prog .skill-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+section.skills .right-div .skill-prog .main-progress{
+    width: 100%;
+    height: 13px;
+    background-color: rgb(225 223 223);
+    position: relative;
+}
+section.skills .right-div .skill-prog .main-progress .sub-progress{
+    width: 90%;
+    height: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+}
+section.skills .right-div .skill-prog .main-progress 
+.sub-progress.css{
+    width: 70%;
+}
+section.skills .right-div .skill-prog .main-progress 
+.sub-progress.js{
+    width: 20%;
+}
+section.skills .right-div .skill-prog .main-progress 
+.sub-progress.bs{
+    width: 40%;
+}
+
+section.Experiences{
+    background-color: rgb(225 223 223);
+}
+
+section.Experiences .container{
+    display: flex;
+    padding: 40px 20px;
+    margin-top: 2%;
+   
+}
+section.Experiences .left-div{
+    width: 25%;
+    padding: 0 60px 0 0;
+    text-align: right;
+}
+section.Experiences .container .left-div > h2{
+    font-weight: bold;
+}
+section.Experiences .right-div{
+    width: 75%;
+}
+section.Experiences .right-div  .cards{
+    display: flex;
+}
+section.Experiences .right-div .cards .card{
+    padding: 13px;
+    background: #FFF;
+    margin-right: 15px;
+}
+section.Experiences .right-div .cards .card i, h4, p{
+    margin-bottom: 15px;
+    color:#414141;
+}
+section.Experiences .right-div .cards .card:hover{
+    background-color: var(--mainColor);
+}
+section.Experiences .right-div .cards .card:hover i,
+section.Experiences .right-div .cards .card:hover h4,
+section.Experiences .right-div .cards .card:hover p{
+    color: #FFF;
+}
+
+
+section.Works{
+    padding: 40px 0;
+}
+section.Works .container{
+    display: flex;
+    padding: 10px;
+   
+}
+section.Works .left-div{
+    width: 25%;
+    padding: 0 60px 0 0;
+    text-align: right;
+}
+section.Works .container .left-div > h2{
+    font-weight: bold;
+}
+section.Works .right-div{
+    width: 75%;
+}
+section.Works .right-div .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px;
+    gap: 4px 4px;
+
+}
+
+section.Works .right-div .container .img-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.Works .right-div .container .img-content.first-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section.Works .right-div .container .img-content:hover{
+    overflow: hidden;
+}
+section.Works .right-div .container .img-content:hover img {
+    
+    transform: scale(1.7);
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+section.contact {
+background-color: rgb(225 223 223);
+padding: 40px;
+}
+section.contact .container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+section.contact .left-div{
+    width: 25%;
+    padding: 0 60px 0 0;
+    text-align: right;
+}
+section.contact .container .left-div > h2{
+    font-weight: bold;
+}
+section.contact .right-div{
+    width: 75%;
+}
+section.contact .right-div .con-details{
+    width: calc(100% / 4);
+}
+section.contact .right-div .con-details h5{
+   
+    margin-bottom: 5px;
+}
+section.contact .right-div .con-details span{
+    color:#858585;
+   
+}
+footer .footer-info .container{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;  
+}
+footer .footer-info .container .cv{
+    color:var(--mainColor);
+}
+footer{
+    position: relative;
+
+    padding: 10px 0;
+}
+.to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    padding: 7px;
+    background-color: var(--mainColor);
+    display: none;
+}
+.to-top i{
+    font-size: 8px;
+    color: var(--mainColor);
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+#theme-color{
+    display: flex;
+    background-color: #FFF;;
+    position: fixed;
+    z-index: 100000;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(100%);
+    transition-duration: 0.5s;
+}
+.show{
+    transform: translateY(-50%) translateX(0)!important;
+
+}
+#theme-color button{
+    position: absolute;
+    background-color: var(--mainColor);
+    color: #FFF;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#theme-color span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#theme-color span:nth-child(1){
+    background-color: red;
+}
+#theme-color span:nth-child(2){
+    background-color: green;
+}
+
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    header{
+        border-bottom: 1px solid #FFF;
+        background-color:transparent;
+    } 
+    header .container nav .small-menu i{
+        color: #FFF;
+    }
+    header .container nav .small-menu 
+    {
+     display: block;
+     line-height: 50px;
+    }
+    header .container nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        background-color: #414141;
+        
+    }
+    
+    header .container nav .small-menu:hover + ul {
+       display: block;
+    }
+    
+    section.skills .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    section.skills .container .left-div
+        {
+            padding: 0;
+            width:100%;
+            text-align: center;
+        }
+
+    section.Experiences .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    section.Experiences .container .left-div
+        {
+            text-align: center;
+            width:100%;
+        }
+
+    section.Works .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    section.Works .container .left-div
+    {
+        text-align: center;
+        width:100%;
+        padding:0;
+    }
+
+
+  
+    section.contact .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        text-align: center;
+       
+    }
+    section.contact .container .left-div
+    {
+        padding: 0;
+        width:100%;
+        text-align: center;
+    }
+    section.contact .container .right-div .container .con-details
+    {
+        margin-bottom: 10px;
+    }
+    section.Experiences .right-div .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    section.Experiences .right-div .cards .card{
+        margin-bottom: 10px;
+    }
+    section.Works .right-div .container {
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+    
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)  { 
+   header .container nav .small-menu i
+   {
+    display: none;
+   }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
